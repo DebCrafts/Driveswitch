@@ -1,0 +1,6 @@
+{
+  "name": "Driveswitch",
+  "description": "Connect all your Gmail and Google accounts in one place, browse each Drive's storage, and switch accounts with one click.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

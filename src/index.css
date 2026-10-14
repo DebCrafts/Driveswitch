@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-serif: "Fraunces", Georgia, serif;
+  --font-sans: "Figtree", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  --color-canvas-light: #eef2ea;
+  --color-canvas-dark: #0f1a14;
+  --color-panel-light: #fafbf8;
+  --color-panel-dark: #16251c;
+  --color-forest: #1f3a2d;
+  --color-forest-dark: #122018;
+  --color-moss: #4a7c4a;
+  --color-moss-light: #7fb27a;
+  --color-sage-selected: #e2ede0;
+  --color-sage-border: #d4ded0;
+  --color-earth-red: #b5523f;
+}
+
+:root {
+  color-scheme: light;
+}
+
+:root.dark {
+  color-scheme: dark;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #eef2ea;
+  color: #1a2620;
+}
+
+.dark body {
+  background-color: #0f1a14;
+  color: #e3ede5;
+}
+
+/* Custom scrollbar styling for account lists and table */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(45, 75, 55, 0.2);
+  border-radius: 9999px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: rgba(127, 178, 122, 0.25);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(45, 75, 55, 0.4);
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: rgba(127, 178, 122, 0.45);
+}
